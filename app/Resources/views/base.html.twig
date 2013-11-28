@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>{% block title %}Welcome!{% endblock %}</title>
+    {% block stylesheets %}{% endblock %}
+
+    {% stylesheets '%kernel.root_dir%/../vendor/twbs/bootstrap/dist/css/*' filter='cssrewrite' %}
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ asset_url }}"/>
+    {% endstylesheets %}
+
+    {% javascripts '%kernel.root_dir%/../vendor/twbs/bootstrap/dist/js/*' filter='cssrewrite' %}
+    <script type="text/javascript" src="{{ asset_url }}"></script>
+    {% endjavascripts %}
+
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}"/>
+</head>
+<body>
+{% block body %}
+{% endblock %}
+{% block javascripts %}{% endblock %}
+</body>
+</html>

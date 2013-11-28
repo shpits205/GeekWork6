@@ -1,0 +1,7 @@
+acme_geek_homepage:
+    pattern:  /geek
+    defaults: { _controller: AcmeGeekBundle:Default:index }
+simple_template:
+    path: /two
+    defaults: { _controller: AcmeGeekBundle:Default:about }
+    methods: [GET, POST]
