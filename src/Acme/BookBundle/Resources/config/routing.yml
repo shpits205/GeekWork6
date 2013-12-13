@@ -1,0 +1,9 @@
+acme_book_homepage:
+    pattern:  /book
+    defaults: { _controller: AcmeBookBundle:Default:index, page: 1 }
+
+acme_book_homepage_page:
+    pattern: /book/{page}
+    defaults: { _controller: AcmeBookBundle:Default:index }
+    requirements:
+        page: "^[0-9]+$"

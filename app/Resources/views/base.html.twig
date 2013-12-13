@@ -5,9 +5,11 @@
     <title>{% block title %}Welcome!{% endblock %}</title>
     {% block stylesheets %}{% endblock %}
 
-    {% stylesheets '%kernel.root_dir%/../vendor/twbs/bootstrap/dist/css/*' filter='cssrewrite' %}
-    <link rel="stylesheet" type="text/css" media="screen" href="{{ asset_url }}"/>
-    {% endstylesheets %}
+
+
+    {% javascripts '%kernel.root_dir%/../vendor/components/jquery/jquery.min.js' %}
+    <script type="text/javascript" src="{{ asset_url }}"></script>
+    {% endjavascripts %}
 
     {% javascripts '%kernel.root_dir%/../vendor/twbs/bootstrap/dist/js/*' filter='cssrewrite' %}
     <script type="text/javascript" src="{{ asset_url }}"></script>

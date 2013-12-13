@@ -39,7 +39,7 @@ class Continent
     /**
      * Get id
      *
-     * @return integer 
+     * @return integer
      */
     public function getId()
     {
@@ -55,14 +55,14 @@ class Continent
     public function setContinent($continent)
     {
         $this->continent = $continent;
-    
+
         return $this;
     }
 
     /**
      * Get continent
      *
-     * @return string 
+     * @return string
      */
     public function getContinent()
     {
